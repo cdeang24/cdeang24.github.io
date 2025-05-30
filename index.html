@@ -3,125 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
-  <style>
-    :root {
-      --bg-color: #121212;
-      --text-color: #f5f5f5;
-      --accent-color: #00bcd4;
-      --card-bg: #1e1e1e;
-      --border-color: #333;
-    }
-
-    body.light-mode {
-      --bg-color: #f9f9f9;
-      --text-color: #222;
-      --accent-color: #007acc;
-      --card-bg: #fff;
-      --border-color: #ddd;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      transition: background 0.3s, color 0.3s;
-    }
-
-    header {
-      background-color: var(--card-bg);
-      padding: 2rem 1rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid var(--border-color);
-      position: relative;
-    }
-
-    nav a {
-      color: var(--accent-color);
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .toggle-btn {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: var(--accent-color);
-      transition: transform 0.2s;
-    }
-
-    .toggle-btn:hover {
-      transform: rotate(15deg);
-    }
-
-    .profile-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
-    }
-
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--accent-color);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      border-bottom: 2px solid var(--border-color);
-      padding-bottom: 0.5rem;
-    }
-
-    .project {
-      margin: 1rem 0;
-      padding: 1rem;
-      background-color: var(--card-bg);
-      border-left: 5px solid var(--accent-color);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    a {
-      color: var(--accent-color);
-    }
-
-    footer {
-      background-color: var(--card-bg);
-      color: var(--text-color);
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      border-top: 1px solid var(--border-color);
-    }
-  </style>
+  <title>Chris DeAngelis | Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social media icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- html style -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Hero Section -->
+  <!-- <section class="hero-section">
+    <h1>Your Name</h1>
+    <p>Welcome to my portfolio! I’m a web developer passionate about creating beautiful and functional web applications. Explore my projects and get in touch with me!</p>
+    <a href="#projects" class="cta-btn">See My Work</a>
+  </section> -->
 
   <header>
     <button class="toggle-btn" id="modeToggle" onclick="toggleMode()" title="Toggle dark/light mode">🌙</button>
 
-    <div class="profile-container">
+    <div class="profile-container reveal">
       <img src="https://github.com/cdeang24.png" alt="Profile Picture" class="profile-pic" />
       <div>
         <h1>Christopher DeAngelis</h1>
-        <p>Web Developer | Designer | Creator</p>
+        <p>Software Engineer</p>
       </div>
     </div>
 
@@ -131,37 +37,72 @@
     </nav>
   </header>
 
-  <section id="about">
+  <!-- About Section -->
+  <section id="about" class="reveal">
     <h2>About Me</h2>
     <p>
-      Hello! I'm a passionate developer with experience in building websites and applications.
-      I enjoy working with modern technologies and constantly learning new things.
-      When I'm not coding, you'll probably find me exploring nature or reading a good book.
+      Hello! 
     </p>
+    <a href="https://docs.google.com/document/d/1qHft1JrEoY51psxs-FXCTK3vs-3etHfJo_fgvxs3bvE/export?format=pdf" class="resume-btn" target="_blank">Download Resume</a>
   </section>
 
-  <section id="projects">
+  <!-- Projects Section -->
+  <section id="projects" class="reveal">
     <h2>Projects</h2>
 
     <div class="project">
-      <h3>Project One</h3>
-      <p>A brief description of what this project is about. You can mention the tech stack and what problem it solves.</p>
-      <p><a href="" target="_blank">View Project</a></p>
+      <div>
+        <h3>Mazejs</h3>
+        <p>A brief description of what this project is about. Tech stack and highlights go here.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="https://yourprojectlink.com" target="_blank">Live Demo</a> | 
+        <a href="https://github.com/yourusername/project-one" target="_blank">Source Code</a>
+      </div>
+      <img src="https://via.placeholder.com/200" alt="Project Thumbnail" />
     </div>
 
     <div class="project">
-      <h3>Project Two</h3>
-      <p>Another project description goes here. Keep it short and to the point.</p>
-      <p><a href="" target="_blank">View on GitHub</a></p>
+      <div>
+        <h3>Project Two</h3>
+        <p>Another project description with what it does and why it's cool.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Node.js</span>
+        </div>
+        <a href="https://yourprojectlink.com" target="_blank">Live Demo</a> | 
+        <a href="https://github.com/yourusername/project-two" target="_blank">Source Code</a>
+      </div>
+      <img src="https://via.placeholder.com/200" alt="Project Thumbnail" />
     </div>
-
   </section>
 
+  <!-- Contact Section -->
+  <!-- <section id="contact" class="reveal">
+    <h2>Contact</h2>
+    <p>Feel free to reach out using the form below or email me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" />
+    </form>
+  </section> -->
+
   <footer>
-    <p>© 2025 Christopher DeAngelis. All rights reserved.</p>
+    <p>© 2025 Your Name — Portfolio Website</p>
+    <div class="social-links">
+      <a href="https://github.com/cdeang24" target="_blank"><i class="fab fa-github"></i></a> •
+      <a href="https://www.linkedin.com/in/christopher-deangelis-031233158/" target="_blank"><i class="fab fa-linkedin"></i></a> •
+      <a href="mailto:deangelis.chris98@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
   </footer>
 
   <script>
+    // Dark/Light Mode Toggle
     const toggleBtn = document.getElementById('modeToggle');
 
     function toggleMode() {
@@ -170,7 +111,6 @@
       toggleBtn.textContent = isLight ? '☀️' : '🌙';
     }
 
-    // Load saved mode preference
     window.addEventListener('load', () => {
       const savedMode = localStorage.getItem('mode');
       if (savedMode === 'light') {
@@ -179,10 +119,21 @@
       }
     });
 
-    // Save mode preference
     toggleBtn.addEventListener('click', () => {
       const isLight = document.body.classList.contains('light-mode');
       localStorage.setItem('mode', isLight ? 'light' : 'dark');
+    });
+
+    // Scroll Reveal Animation
+    window.addEventListener('scroll', () => {
+      const reveals = document.querySelectorAll('.reveal');
+      reveals.forEach((reveal) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveal.getBoundingClientRect().top;
+        if (revealTop < windowHeight - 150) {
+          reveal.classList.add('visible');
+        }
+      });
     });
   </script>
 </body>
