@@ -13,15 +13,7 @@
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <!-- <section class="hero-section">
-    <h1>Your Name</h1>
-    <p>Welcome to my portfolio! I’m a web developer passionate about creating beautiful and functional web applications. Explore my projects and get in touch with me!</p>
-    <a href="#projects" class="cta-btn">See My Work</a>
-  </section> -->
-
   <header>
-    <button class="toggle-btn" id="modeToggle" onclick="toggleMode()" title="Toggle dark/light mode">🌙</button>
 
     <div class="profile-container reveal">
       <img src="https://github.com/cdeang24.png" alt="Profile Picture" class="profile-pic" />
@@ -80,20 +72,8 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <!-- <section id="contact" class="reveal">
-    <h2>Contact</h2>
-    <p>Feel free to reach out using the form below or email me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <input type="submit" value="Send Message" />
-    </form>
-  </section> -->
-
   <footer>
-    <p>© 2025 Your Name — Portfolio Website</p>
+    <p>© 2025 Christopher DeAngelis</p>
     <div class="social-links">
       <a href="https://github.com/cdeang24" target="_blank"><i class="fab fa-github"></i></a> •
       <a href="https://www.linkedin.com/in/christopher-deangelis-031233158/" target="_blank"><i class="fab fa-linkedin"></i></a> •
@@ -102,28 +82,6 @@
   </footer>
 
   <script>
-    // Dark/Light Mode Toggle
-    const toggleBtn = document.getElementById('modeToggle');
-
-    function toggleMode() {
-      document.body.classList.toggle('light-mode');
-      const isLight = document.body.classList.contains('light-mode');
-      toggleBtn.textContent = isLight ? '☀️' : '🌙';
-    }
-
-    window.addEventListener('load', () => {
-      const savedMode = localStorage.getItem('mode');
-      if (savedMode === 'light') {
-        document.body.classList.add('light-mode');
-        toggleBtn.textContent = '☀️';
-      }
-    });
-
-    toggleBtn.addEventListener('click', () => {
-      const isLight = document.body.classList.contains('light-mode');
-      localStorage.setItem('mode', isLight ? 'light' : 'dark');
-    });
-
     // Scroll Reveal Animation
     window.addEventListener('scroll', () => {
       const reveals = document.querySelectorAll('.reveal');
