@@ -26,7 +26,7 @@ body {
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
-    transition: background 0.3s, color 0.3s;
+    transition: 0.3s, color 0.3s;
 }
 
 header {
@@ -180,6 +180,17 @@ h2 {
     font-size: 0.9rem;
 }
 
+.blog-post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
 .resume-btn {
     display: inline-block;
     padding: 0.6rem 1.2rem;
@@ -240,15 +251,3 @@ footer {
     padding: 6rem 2rem;
     }
 }
-
-/* Scroll reveal animation */
-/* .reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-} */
